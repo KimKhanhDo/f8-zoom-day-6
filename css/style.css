@@ -313,13 +313,10 @@ a {
 .pricing-wrapper {
     min-height: 100vh;
     background: linear-gradient(to bottom, #e2d8f7, #f3effb, #f7f4fb);
-    font-family: 'Poppins', sans-serif;
 }
 
 .pricing-container {
-    max-width: calc(100% - 48px);
-    margin: 0 auto;
-    padding: 50px 40px;
+    padding: 50px 0;
 }
 
 .pricing-header {
@@ -328,53 +325,58 @@ a {
 }
 
 .pricing-heading {
-    font-size: 32px;
+    font-size: 4rem;
     font-weight: 600;
+    line-height: 1.7;
 }
 
 .pricing-intro {
     max-width: 700px;
-    margin: 20px auto 20px;
+    margin: 25px auto 30px;
 
-    font-size: 17px;
+    font-size: 1.8rem;
     line-height: 1.5;
     color: #7d798a;
 }
 
 .plan-blocks {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 0;
+    margin-top: 60px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .plan-block {
-    display: inline-block;
-    max-width: 30%;
-    min-height: 560px;
+    max-width: 32%;
     padding: 25px 20px;
-    margin: 0 1%;
 
-    text-align: left;
-    vertical-align: top;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: #fff;
     border: 1.2px solid rgba(168, 163, 184, 0.4);
     border-radius: 20px;
 
     cursor: pointer;
+    transition: 0.25s;
 }
 
-/* Test here */
+/* Hover */
 .plan-block:hover {
+    transform: translateY(-18px);
+}
+
+.plan-block:hover,
+.plan-block.active {
     border: 2px solid #7c4af9;
     box-shadow: 7px -10px 24px rgba(124, 74, 249, 0.2);
 }
 
-.plan-block:hover .plan-item::before {
+.plan-block:hover .plan-item::before,
+.plan-block.active .plan-item::before {
     color: #7c4af9;
 }
 
-.plan-block:hover .plan-subscribe {
+.plan-block:hover .plan-subscribe,
+.plan-block.active .plan-subscribe {
     background: #7c4df5;
     color: #fff;
 }
@@ -397,11 +399,11 @@ a {
 }
 
 .plan-label {
-    padding: 5px 12px;
+    padding: 6px 12px;
     background: #7c4af9;
     border-radius: 10px;
 
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
 }
@@ -409,7 +411,8 @@ a {
 .plan-desc {
     margin-top: 22px;
     min-height: 55px;
-    font-size: 12.5px;
+
+    font-size: 1.25rem;
     line-height: 1.5;
     color: #7d798a;
 }
@@ -420,13 +423,15 @@ a {
 }
 
 .plan-price {
-    font-size: 12.5px;
+    font-size: 1.25rem;
+    font-weight: 450;
     color: #7d798a;
 }
 
 .plan-price > strong {
     margin-right: 4px;
-    font-size: 30px;
+
+    font-size: 3rem;
     font-weight: 600;
     color: #1c1e21;
 }
@@ -441,7 +446,8 @@ a {
 }
 
 .plan-item {
-    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 450;
     line-height: 1.2;
 }
 
@@ -457,12 +463,11 @@ a {
 }
 
 .plan-subscribe {
-    margin-top: 5px 0 10px;
     display: block;
     padding: 12px 20px;
     width: 100%;
 
-    font-weight: 500;
+    font-weight: 550;
     text-align: center;
     border: 1.2px solid rgba(168, 163, 184, 0.4);
     border-radius: 10px;
