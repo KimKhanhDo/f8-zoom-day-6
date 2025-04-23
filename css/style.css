@@ -340,13 +340,12 @@ a {
 
 .plan-blocks {
     margin-top: 60px;
-
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .plan-block {
-    max-width: 32%;
+    flex: 1 0;
     padding: 25px 20px;
 
     font-size: 1.6rem;
@@ -363,19 +362,16 @@ a {
     transform: translateY(-18px);
 }
 
-.plan-block:hover,
-.plan-block.active {
+.plan-block:hover {
     border: 2px solid #7c4af9;
     box-shadow: 7px -10px 24px rgba(124, 74, 249, 0.2);
 }
 
-.plan-block:hover .plan-item::before,
-.plan-block.active .plan-item::before {
+.plan-block:hover .plan-item::before {
     color: #7c4af9;
 }
 
-.plan-block:hover .plan-subscribe,
-.plan-block.active .plan-subscribe {
+.plan-block:hover .plan-subscribe {
     background: #7c4df5;
     color: #fff;
 }
