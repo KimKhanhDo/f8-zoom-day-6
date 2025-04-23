@@ -1,0 +1,470 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Common */
+
+input,
+button {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    /* When width of browser >= 1110px, width of 1110px will be applied */
+    /*  When width of browser < 1110px, max-width will be applied. Set up this way to avoid horizontal scroll */
+    width: 1110px;
+    max-width: calc(100% - 48px); /* 24px for each side of webPage */
+    /* Make content stay in middle */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Index */
+.main-container {
+    background: linear-gradient(135deg, #5c6cff, #954bff);
+}
+
+.nav-list {
+    padding: 20px;
+    text-align: center;
+    font-size: 0;
+}
+
+.item {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 12px;
+    border-radius: 99px;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+}
+
+.item:hover {
+    background: #d1c7ee;
+    color: #1f1c24;
+}
+
+/* CV */
+.cv-content {
+    display: flex;
+
+    margin: 50px 0;
+    background: #f6f4f4;
+}
+
+.sidebar {
+    max-width: 30%;
+    padding: 58px 30px;
+
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #fff;
+    background: #414141;
+}
+
+.sidebar__group::after {
+    margin: 30px 0 30px;
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+}
+
+.sidebar__group:last-child::after {
+    display: none;
+}
+
+.sidebar__profile {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.sidebar__heading {
+    margin-bottom: 8px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.about__text {
+    line-height: 1.8;
+}
+
+.link__item + .link__item {
+    margin-top: 8px;
+}
+
+.link__label {
+    display: block;
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.link__href {
+    margin-top: 5px;
+    font-size: 1.3rem;
+}
+
+.link__href:hover {
+    text-decoration: underline;
+}
+
+.references__item + .references__item {
+    margin-top: 18px;
+}
+
+.reference__info + .reference__info {
+    margin-top: 4px;
+}
+
+.reference__name {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.reference__info > strong {
+    font-weight: 600;
+    font-style: normal;
+}
+
+.reference__title,
+.reference__phone,
+.reference__email {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+/* Main CV   */
+.main-content {
+    padding: 70px 30px;
+    color: #5f6060;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    color: #525454;
+}
+
+.main-header__left {
+    margin-top: -5px;
+}
+
+.main-header__name {
+    font-size: 5rem;
+    font-weight: 650;
+}
+
+.main-header__title {
+    margin-top: 15px;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.main-header__right {
+    font-size: 1.4rem;
+}
+
+.contact__item + .contact__item {
+    margin-top: 14px;
+}
+
+.contact__text {
+    margin-left: 8px;
+}
+
+.section__group {
+    margin-top: 30px;
+}
+
+.section__group::before {
+    margin-bottom: 15px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #a2a4a4;
+}
+
+.section__heading {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #3b3c3c;
+}
+
+.education__item {
+    line-height: 1.5;
+}
+
+.education__item:nth-of-type(2) {
+    margin-top: 14px;
+}
+
+.education__institution {
+    margin-bottom: 2px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #4c4d4d;
+}
+
+.education__degree {
+    font-weight: 450;
+    margin-bottom: 2px;
+    color: #5f6060;
+}
+
+.education__dates {
+    font-size: 1.5rem;
+    color: #5f6060;
+}
+
+.skills__list {
+    padding-left: 10px;
+}
+
+.skills__item + .skills__item {
+    margin-top: 8px;
+}
+
+.skills__item {
+    line-height: 1.6;
+}
+
+.work-experience__item + .work-experience__item {
+    margin-top: 20px;
+}
+
+.work-experience__dates {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 1.7rem;
+    font-weight: 550;
+    color: #343535;
+}
+
+.work-experience__role {
+    font-size: 1.6rem;
+    font-weight: 450;
+    color: #5f6060;
+}
+
+.work-experience__role > strong {
+    font-weight: 700;
+}
+
+.work-experience__responsibilities {
+    margin-top: 12px;
+    padding-left: 10px;
+}
+
+.responsibility__item {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.responsibility__item::before,
+.skills__item::before {
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;
+
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #5f6060;
+}
+
+.responsibility__item:last-child {
+    margin-bottom: 0;
+}
+
+/* Pricing Table */
+.pricing-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #e2d8f7, #f3effb, #f7f4fb);
+    font-family: 'Poppins', sans-serif;
+}
+
+.pricing-container {
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+
+.pricing-header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pricing-heading {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.pricing-intro {
+    max-width: 700px;
+    margin: 20px auto 20px;
+
+    font-size: 17px;
+    line-height: 1.5;
+    color: #7d798a;
+}
+
+.plan-blocks {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.plan-block {
+    display: inline-block;
+    max-width: 30%;
+    min-height: 560px;
+    padding: 25px 20px;
+    margin: 0 1%;
+
+    text-align: left;
+    vertical-align: top;
+    font-size: 16px;
+    background: #fff;
+    border: 1.2px solid rgba(168, 163, 184, 0.4);
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+/* Test here */
+.plan-block:hover {
+    border: 2px solid #7c4af9;
+    box-shadow: 7px -10px 24px rgba(124, 74, 249, 0.2);
+}
+
+.plan-block:hover .plan-item::before {
+    color: #7c4af9;
+}
+
+.plan-block:hover .plan-subscribe {
+    background: #7c4df5;
+    color: #fff;
+}
+
+.active .plan-label {
+    box-shadow: 0 8px 24px rgba(124, 74, 249, 0.2);
+}
+
+.plan-intro {
+    padding-bottom: 10px;
+}
+
+.plan-intro::after,
+.plan-detail::after {
+    display: inline-block;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: rgba(168, 163, 184, 0.4);
+}
+
+.plan-label {
+    padding: 5px 12px;
+    background: #7c4af9;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.plan-desc {
+    margin-top: 22px;
+    min-height: 55px;
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: #7d798a;
+}
+
+.plan-price {
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+.plan-price {
+    font-size: 12.5px;
+    color: #7d798a;
+}
+
+.plan-price > strong {
+    margin-right: 4px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1c1e21;
+}
+
+.plan-detail {
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.plan-list {
+    min-height: 220px;
+}
+
+.plan-item {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.plan-item + .plan-item {
+    margin-top: 15px;
+}
+
+.plan-item::before {
+    content: '✓';
+    font-weight: 400;
+    margin-right: 8px;
+    color: #352f49;
+}
+
+.plan-subscribe {
+    margin-top: 5px 0 10px;
+    display: block;
+    padding: 12px 20px;
+    width: 100%;
+
+    font-weight: 500;
+    text-align: center;
+    border: 1.2px solid rgba(168, 163, 184, 0.4);
+    border-radius: 10px;
+    cursor: pointer;
+}
