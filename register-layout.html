@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Register Layout</title>
+        <link
+            rel="stylesheet"
+            href="./css/reset.css"
+        />
+
+        <!-- Embed font -->
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="./css/style.css"
+        />
+    </head>
+    <body>
+        <div class="form__layout">
+            <div class="form__container">
+                <div class="form__wrapper">
+                    <div class="form__left">
+                        <div class="header__top">
+                            <span class="header__label">KPNG</span>
+                            <a
+                                href="#"
+                                class="header__back-link"
+                                >Back to website</a
+                            >
+                        </div>
+
+                        <div class="header__bottom">
+                            <p class="header__caption">
+                                Capturing Moments, <br />
+                                <span> Creating Memories</span>
+                            </p>
+
+                            <div class="dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot active"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__right">
+                        <div class="form__header">
+                            <h1 class="form__heading">Create an account</h1>
+                            <p class="form__title">
+                                Already have an account?
+                                <a
+                                    href="#"
+                                    class="form__login"
+                                    >Log in</a
+                                >
+                            </p>
+                        </div>
+
+                        <form class="form">
+                            <div class="form__group">
+                                <label
+                                    for="username"
+                                    class="form__label"
+                                >
+                                    Username
+                                </label>
+                                <input
+                                    class="form__input"
+                                    id="username"
+                                    type="text"
+                                />
+                            </div>
+
+                            <div class="form__group">
+                                <label
+                                    for="email"
+                                    class="form__label"
+                                >
+                                    Email
+                                </label>
+                                <input
+                                    class="form__input"
+                                    id="email"
+                                    type="email"
+                                />
+                            </div>
+
+                            <div class="form__group">
+                                <label
+                                    for="password"
+                                    class="form__label"
+                                >
+                                    Password
+                                </label>
+                                <input
+                                    class="form__input"
+                                    id="password"
+                                    type="password"
+                                />
+                            </div>
+
+                            <div class="form__group">
+                                <label
+                                    for="confirm-password"
+                                    class="form__label"
+                                >
+                                    Confirm Password
+                                </label>
+                                <input
+                                    class="form__input"
+                                    id="confirm-password"
+                                    type="password"
+                                />
+                            </div>
+
+                            <div class="form__group form__term-condition">
+                                <input
+                                    class="term-condition-input"
+                                    id="term-condition"
+                                    type="checkbox"
+                                />
+                                <label
+                                    for="term-condition "
+                                    class="form__label term-condition-label"
+                                >
+                                    I agree to the
+                                    <a
+                                        href="#"
+                                        class="form__login"
+                                    >
+                                        Term & Conditions</a
+                                    >
+                                </label>
+                            </div>
+
+                            <button class="btn-account">Create account</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
